@@ -1,0 +1,45 @@
+mql5
+// BackTest Forex Software
+// Developer: Forex Robot Easy Team
+// Website: forexroboteasy.com
+
+// Define input parameters
+input double lotSize = 0.1; // Default lot size
+input double takeProfit = 100.0; // Default take-profit level
+input double stopLoss = 50.0; // Default stop-loss level
+
+// Define trading function
+void OpenTrade(double lot, double tp, double sl)
+{
+   // Open trade code here
+   Print('Trade opened with lot size: ', lot);
+   Print('Take-profit level set to: ', tp);
+   Print('Stop-loss level set to: ', sl);
+}
+
+// Define strategy testing function
+void TestStrategy()
+{
+   // Strategy testing code here
+   Print('Strategy testing started');
+   // Simulate trades using historical price data
+   // Test against past market conditions
+   // Provide insights into potential performance
+   
+   // Example trade
+   OpenTrade(lotSize, takeProfit, stopLoss);
+   
+   Print('Strategy testing completed');
+}
+
+// Main program
+void OnStart()
+{
+   // Call strategy testing function
+   TestStrategy();
+   
+   // Additional code or logic here
+   
+   // Logical conclusion
+   Print('BackTest Forex Software execution completed');
+}
